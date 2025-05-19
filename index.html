@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Game Tebak Angka</title>
+  <link rel="stylesheet" href="satu.css" />
+</head>
+<body>
+  <div class="container" id="landingPage">
+    <h1>Selamat Datang!</h1>
+    <p>Uji keberuntunganmu dalam <strong>Game Tebak Angka</strong>.</p>
+    <p>Coba tebak angka dari 1 sampai 100!</p>
+    <button onclick="startGame()">Mulai Bermain</button>
+    <div id="footer">&copy; 2025 by developer Aditz - Game sederhana</div>
+  </div>
+
+  <div class="container" id="gamePage" style="display: none;">
+    <h1>Game Tebak Angka</h1>
+    <p>Tebak angka antara 1 sampai 100</p>
+    <input type="number" id="userInput" placeholder="Masukkan angka..." />
+    <br />
+    <button onclick="checkGuess()">Cek Tebakan</button>
+    <p id="message"></p>
+    <p id="attempts">Jumlah percobaan: 0</p>
+    <button onclick="restartGame()" id="restartButton" style="display: none;">Mulai Lagi</button>
+    <br />
+    <button onclick="goBack()">Kembali ke Awal</button>
+  </div>
+
+  <script src="dua.js"></script>
+</body>
+</html>
